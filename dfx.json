@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "adviceApi_backend": {
+      "main": "src/adviceApi_backend/main.mo",
+      "type": "motoko"
+    },
+    "adviceApi_frontend": {
+      "dependencies": [
+        "adviceApi_backend"
+      ],
+      "source": [
+        "src/adviceApi_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "adviceApi_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
